@@ -1,12 +1,30 @@
+'use client';
+
+import { Message, useAssistant } from '@ai-sdk/react';
+
 export default function Page() {
+  const { status, messages, input, submitMessage, handleInputChange } = useAssistant({ api: '/api/assistant' });
+
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
-      <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-        <div className="aspect-video rounded-xl bg-muted/50" />
-        <div className="aspect-video rounded-xl bg-muted/50" />
-        <div className="aspect-video rounded-xl bg-muted/50" />
+      <div className="p-2">status: {status}</div>
+
+      <div className="flex flex-col p-2 gap-2">
+        {messages.map((message: Message) => (
+          <div key={message.id} className="flex flex-row gap-2">
+            <div className="w-24 text-zinc-500">{`${message.role}: `}</div>
+            <div className="w-full">{message.content}</div>
+          </div>
+        ))}
       </div>
-      <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+      <form onSubmit={submitMessage} className="fixed bottom-0 p-2 w-full">
+        <input
+          disabled={status !== 'awaiting_message'}
+          value={input}
+          onChange={handleInputChange}
+          className="bg-zinc-100 w-full p-2"
+        />
+      </form>
     </div>
   );
 }
