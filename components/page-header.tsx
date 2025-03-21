@@ -5,7 +5,6 @@ import {
   Breadcrumb,
   BreadcrumbList,
   BreadcrumbItem,
-  BreadcrumbLink,
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from '@/components/ui/breadcrumb';
@@ -18,7 +17,7 @@ export function PageHeader() {
   const currentPage = navMap[pathname];
 
   return (
-    <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
+    <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4 sticky top-0 z-10 bg-background">
       <SidebarTrigger className="-ml-1 cursor-pointer" />
       <Separator orientation="vertical" className="mr-2 h-4" />
       <Breadcrumb>
@@ -26,7 +25,7 @@ export function PageHeader() {
           {currentPage ? (
             <>
               <BreadcrumbItem className="hidden md:block">
-                <BreadcrumbLink href="/">{currentPage.group}</BreadcrumbLink>
+                <BreadcrumbPage>{currentPage.group}</BreadcrumbPage>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>

@@ -76,7 +76,6 @@ export default function Page() {
         </CardContent>
       </Card>
 
-      <h2 className="text-2xl font-bold mt-4">프로젝트</h2>
       <div className="grid auto-rows-min gap-4 md:grid-cols-3">
         <Card className="aspect-video relative flex justify-center items-center p-4 group">
           <Image

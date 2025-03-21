@@ -28,7 +28,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <Link href={'/'}>
           <SidebarMenu>
             <SidebarMenuItem>
-              <SidebarMenuButton size="lg" className=" cursor-pointer">
+              <SidebarMenuButton size="lg" className="cursor-pointer">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
                   <MessageCircleIcon className="size-4" />
                 </div>

@@ -35,8 +35,7 @@ export default function Page() {
   };
 
   return (
-    <div className="flex flex-1 flex-col gap-4 p-4">
-      {error && <h1>{error.message}</h1>}
+    <div className="flex h-full flex-col gap-4 p-4">
       {!messages.length && (
         <div className="flex flex-col w-full h-full justify-center items-center gap-2">
           <Image src={'/avatar.png'} alt="avatar" width={300} height={300} />
@@ -62,8 +61,14 @@ export default function Page() {
                 </div>
               ))}
             </div>
+            {error && (
+              <div className="text-red-500 mb-2">
+                {error?.message || '오류가 발생했습니다. 잠시 후 다시 시도해주세요.'}
+              </div>
+            )}
           </ScrollArea>
         </CardContent>
+
         <CardFooter className="absolute bottom-4 w-full">
           <form onSubmit={handleSubmitOrStop} className="flex flex-col p-2 gap-2 w-full">
             <Input

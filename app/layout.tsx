@@ -31,8 +31,10 @@ export default function RootLayout({
         <SidebarProvider>
           <AppSidebar />
           <SidebarInset>
-            <PageHeader />
-            {children}
+            <div className="flex flex-col min-h-screen">
+              <PageHeader />
+              <main className="flex-1">{children}</main>
+            </div>
           </SidebarInset>
         </SidebarProvider>
       </body>
