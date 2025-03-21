@@ -15,7 +15,7 @@ export default function Page() {
 
   const t = useTranslations('MainPage');
 
-  const sampleQuestions = [t('sampleQuestionsStack'), t('sampleQuestionsFun')];
+  const sampleQuestions = [t('sampleQuestionStack'), t('sampleQuestionFun')];
 
   const handleSampleQuestion = (question: string) => {
     setInput(question);

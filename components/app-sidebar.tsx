@@ -4,6 +4,7 @@ import * as React from 'react';
 import {
   Sidebar,
   SidebarContent,
+  SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
@@ -16,11 +17,27 @@ import {
 import { MessageCircleIcon } from 'lucide-react';
 import Link from 'next/link';
 import { getNavGroups } from '@/lib/navigation';
-import { usePathname } from 'next/navigation';
+import { SelectItem, SelectContent, Select, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { useLocale } from 'next-intl';
+import { usePathname, useSearchParams, useRouter } from 'next/navigation';
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-  const pathname = usePathname();
   const navGroups = React.useMemo(() => getNavGroups(), []);
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const locale = useLocale();
+
+  function onValueChange(nextLocale: string) {
+    console.log(pathname, nextLocale);
+
+    const segments = pathname.split('/');
+    segments[1] = nextLocale;
+    const newPath = segments.join('/');
+
+    // 이동
+    router.push(`${newPath}?${searchParams.toString()}`);
+  }
 
   return (
     <Sidebar {...props}>
@@ -59,6 +76,17 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         ))}
       </SidebarContent>
       <SidebarRail />
+      <SidebarFooter>
+        <Select onValueChange={onValueChange} defaultValue={locale}>
+          <SelectTrigger>
+            <SelectValue placeholder="Select a verified email to display" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="ko">korean</SelectItem>
+            <SelectItem value="en">english</SelectItem>
+          </SelectContent>
+        </Select>
+      </SidebarFooter>
     </Sidebar>
   );
 }

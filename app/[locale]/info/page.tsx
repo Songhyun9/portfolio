@@ -33,7 +33,7 @@ export default function InfoPage() {
             aria-label="이력서 보기"
           >
             <Button className="cursor-pointer">
-              <FileUser /> 이력서
+              <FileUser /> {t('resume')}
             </Button>
           </Link>
         </div>

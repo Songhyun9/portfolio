@@ -12,6 +12,7 @@
     "jobTitle": "Songhyun Kim",
     "jobSubtitle": "Frontend Developer",
     "email": "ksh93813@gmail.com",
+    "resume": "resume",
     "paragraph1": "Hello! I'm a frontend developer specializing in React and Next.js. I've worked on various projects from marketing solutions to 3D web games at startups. I can handle the entire process from design to deployment and focus on building user-friendly web services. I enjoy learning new technologies and trends quickly and applying them to real projects. I believe in growing together with my teammates and strive to create valuable results, ultimately maximizing business impact.",
     "techStack": {
       "title": "Tech Stack",
@@ -46,5 +47,23 @@
     "common": {
       "seeMore": "See More"
     }
+  },
+
+  "AstarmizePage": {
+    "title": "Astarmize",
+    "subtitle": "B2B Marketing Content Automation AI Service Client Development",
+    "company": "Company",
+    "companyName": "Asta",
+    "period": "Period",
+    "contribution": "Contribution",
+    "projectOverview": "Project Overview",
+    "projectOverviewText": "Developed the client for a B2B marketing content automation AI service. This service simplifies and automates the marketing content creation process through a user-friendly interface and various features, including a WYSIWYG editor, Instagram post auto-distribution system, and multi-layer image editing functionality.",
+    "keyAchievements": "Key Achievements",
+    "achievement1": "Improved user content creation efficiency by developing a ProseMirror-based WYSIWYG editor and custom plugins",
+    "achievement2": "Implemented an Instagram post auto-distribution system using Meta Graph API, reducing content upload time by 70%",
+    "achievement3": "Created multi-layer image editing functionality using Canvas API, eliminating dependence on external graphic tools and streamlining workflow, resulting in a 40% reduction in user work time",
+    "achievement4": "Built a multilingual support system (Korean, English, French) using i18next",
+    "achievement5": "Optimized and automated CI/CD pipeline using Github Actions, reducing deployment time from 15 minutes to 3 minutes (80%) and improving development productivity",
+    "technologiesTools": "Technologies and Tools"
   }
 }
