@@ -1,9 +1,50 @@
 {
   "MainPage": {
-    "title": "Welcome to the Main Page",
-    "description": "Welcome!"
+    "title": "Hello! I'm a Frontend Developer, Songhyun Kim.",
+    "description": "If you have any questions regarding my experience, projects, or tech stack, feel free to ask anything.",
+    "placeholder": "Ask anything",
+    "error": "An error occurred. Please try again later.",
+    "sampleQuestionStack": "What technology stack do you use?",
+    "sampleQuestionFun": "Which project was the most fun for you?"
   },
-  "Info": {
-    "name": "songhyun kim"
+
+  "InfoPage": {
+    "jobTitle": "Songhyun Kim",
+    "jobSubtitle": "Frontend Developer",
+    "email": "ksh93813@gmail.com",
+    "paragraph1": "Hello! I'm a frontend developer specializing in React and Next.js. I've worked on various projects from marketing solutions to 3D web games at startups. I can handle the entire process from design to deployment and focus on building user-friendly web services. I enjoy learning new technologies and trends quickly and applying them to real projects. I believe in growing together with my teammates and strive to create valuable results, ultimately maximizing business impact.",
+    "techStack": {
+      "title": "Tech Stack",
+      "description": "React, Next.js, TypeScript, Tailwind CSS, Three.js, Zustand, TanStack Query, Vitejs"
+    },
+    "experience": {
+      "title": "Experience",
+      "description": "Led the entire process from design to deployment"
+    },
+    "collaboration": {
+      "title": "Collaboration Style",
+      "description": "Grow with teammates to create valuable results"
+    },
+    "goal": {
+      "title": "Goal",
+      "description": "Maximize business performance with user-friendly services"
+    },
+    "projects": {
+      "astarmize": {
+        "title": "Astarmize",
+        "description": "AI Content Generation Platform for Enterprises"
+      },
+      "copykle": {
+        "title": "Copykle",
+        "description": "AI Content Generation Platform for B2C"
+      },
+      "hoeyo": {
+        "title": "Hoeyo",
+        "description": "Cultural Arts Space"
+      }
+    },
+    "common": {
+      "seeMore": "See More"
+    }
   }
 }

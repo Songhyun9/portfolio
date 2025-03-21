@@ -15,7 +15,7 @@ export default function Page() {
 
   const t = useTranslations('MainPage');
 
-  const sampleQuestions = ['어떤 기술 스택을 사용하시나요?', '포트폴리오를 볼 수 있을까요?'];
+  const sampleQuestions = [t('sampleQuestionsStack'), t('sampleQuestionsFun')];
 
   const handleSampleQuestion = (question: string) => {
     setInput(question);
@@ -42,10 +42,8 @@ export default function Page() {
       {!messages.length && (
         <div className="flex flex-col w-full h-full justify-center items-center gap-2">
           <Image src={'/avatar.png'} alt="avatar" width={300} height={300} />
-          <h1 className="text-xl font-bold">안녕하세요! 프론트엔드 개발자 김송현입니다.{t('title')}</h1>
-          <h1 className="text-xl font-bold">
-            제 경력, 프로젝트, 기술 스택에 대해 궁금한 점이 있으시면 무엇이든 물어보세요.
-          </h1>
+          <h1 className="text-xl font-bold">{t('title')}</h1>
+          <h1 className="text-xl font-bold">{t('description')}</h1>
         </div>
       )}
       <Card className="flex flex-col h-full w-full relative">
@@ -64,11 +62,7 @@ export default function Page() {
                 </div>
               ))}
             </div>
-            {error && (
-              <div className="text-red-500 mb-2">
-                {error?.message || '오류가 발생했습니다. 잠시 후 다시 시도해주세요.'}
-              </div>
-            )}
+            {error && <div className="text-red-500 mb-2">{error?.message || t('error')}</div>}
           </ScrollArea>
         </CardContent>
 
@@ -77,7 +71,7 @@ export default function Page() {
             <Input
               disabled={status === 'in_progress'}
               value={input}
-              placeholder="무엇이든 물어보세요"
+              placeholder={t('placeholder')}
               onChange={handleInputChange}
               className="bg-zinc-100 w-full p-2"
             />

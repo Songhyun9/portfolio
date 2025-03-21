@@ -4,8 +4,7 @@ import '@/app/globals.css';
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
 import { AppSidebar } from '@/components/app-sidebar';
 import { PageHeader } from '@/components/page-header';
-import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import { routing } from '@/i18n/routing';
+import { NextIntlClientProvider } from 'next-intl';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -30,9 +29,6 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) {
-    // notFound();
-  }
 
   return (
     <html lang={locale}>

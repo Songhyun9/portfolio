@@ -25,9 +25,7 @@ export default function Page() {
         </Card>
       </div>
 
-      {/* 프로젝트 상세 정보 */}
       <div className="flex flex-col gap-6 rounded-xl bg-muted/20 p-6 md:min-h-min">
-        {/* 프로젝트 메타 정보 */}
         <div className="grid gap-4 md:grid-cols-3">
           <div className="flex flex-col gap-1">
             <span className="text-sm font-medium text-muted-foreground">회사</span>
@@ -46,7 +44,6 @@ export default function Page() {
           </div>
         </div>
 
-        {/* 프로젝트 개요 */}
         <div>
           <h2 className="mb-3 text-xl font-semibold tracking-tight">프로젝트 개요</h2>
           <p className="text-muted-foreground">
@@ -56,7 +53,6 @@ export default function Page() {
           </p>
         </div>
 
-        {/* 주요 성과 */}
         <div>
           <h2 className="mb-3 text-xl font-semibold tracking-tight">주요 성과</h2>
           <ul className="space-y-3">
@@ -99,7 +95,6 @@ export default function Page() {
           </ul>
         </div>
 
-        {/* 사용 기술 및 도구 */}
         <div>
           <h2 className="mb-3 text-xl font-semibold tracking-tight">사용 기술 및 도구</h2>
           <div className="flex flex-wrap gap-2">

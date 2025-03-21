@@ -98,7 +98,6 @@ export default function Page() {
           </ul>
         </div>
 
-        {/* 사용 기술 및 도구 */}
         <div>
           <h2 className="mb-3 text-xl font-semibold tracking-tight">사용 기술 및 도구</h2>
           <div className="flex flex-wrap gap-2">
