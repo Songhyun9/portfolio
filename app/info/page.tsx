@@ -133,8 +133,8 @@ export default function Page() {
           <div className="absolute rounded-xl inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <div className="text-white text-center p-4">
               <h3 className="text-xl font-bold">호이요</h3>
-              <p className="mb-2">문화예술공간 웹사이트 제작</p>
-              <Link href="/hoeyo" aria-label="호이요 웹사이트 방문하기">
+              <p className="mb-2">문화예술공간</p>
+              <Link href="/hoeyo" aria-label="hoeyo 프로젝트 상세 보기">
                 <Button variant={'secondary'} className="cursor-pointer hover:bg-white">
                   자세히 보기
                   <ChevronRight />

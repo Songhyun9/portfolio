@@ -46,10 +46,10 @@ export default function Page() {
           </h1>
         </div>
       )}
-      <Card className="flex flex-col h-full w-full">
-        <CardContent className="flex-grow p-4 h-full">
-          <ScrollArea className="h-full pr-4">
-            <div className="space-y-4">
+      <Card className="flex flex-col h-full w-full relative">
+        <CardContent className="flex-grow p-4 h-full ">
+          <ScrollArea className="h-full pr-4 pb-10">
+            <div className="space-y-4 ">
               {messages.map((msg, index) => (
                 <div key={index} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                   <div
@@ -64,7 +64,7 @@ export default function Page() {
             </div>
           </ScrollArea>
         </CardContent>
-        <CardFooter className="pt-0 fixed bottom-0 w-full max-w-7xl bg-accent">
+        <CardFooter className="absolute bottom-4 w-full">
           <form onSubmit={handleSubmitOrStop} className="flex flex-col p-2 gap-2 w-full">
             <Input
               disabled={status === 'in_progress'}
