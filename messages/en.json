@@ -65,5 +65,36 @@
     "achievement4": "Built a multilingual support system (Korean, English, French) using i18next",
     "achievement5": "Optimized and automated CI/CD pipeline using Github Actions, reducing deployment time from 15 minutes to 3 minutes (80%) and improving development productivity",
     "technologiesTools": "Technologies and Tools"
+  },
+  "HoeyoPage": {
+    "title": "Hoeyo",
+    "subtitle": "Cultural Arts Space Website Development",
+    "client": "Client",
+    "clientName": "Hoeyo",
+    "period": "Period",
+    "contribution": "Contribution",
+    "projectOverview": "Project Overview",
+    "projectOverviewText": "Designed and developed a website that embodies the brand identity of the cultural arts space Hoeyo. The goal was to implement Hoeyo's unique artistic sensibility in the web space and provide an optimized user experience across various devices. Built a modern and intuitive interface using pure HTML, CSS, and JavaScript.",
+    "keyAchievements": "Key Achievements",
+    "achievement1": "Designed and developed a website that embodies the brand identity of the cultural arts space Hoeyo using JavaScript, HTML5, and CSS3",
+    "achievement2": "Implemented responsive web design using CSS3 media queries and Flexbox/Grid layouts to provide an optimized user experience across various devices",
+    "technologiesTools": "Technologies and Tools"
+  },
+  "CopyklePage": {
+    "title": "Copykle",
+    "subtitle": "B2C Marketing Content AI Service Client Development",
+    "company": "Company",
+    "companyName": "Asta",
+    "period": "Period",
+    "contribution": "Contribution",
+    "projectOverview": "Project Overview",
+    "projectOverviewText": "Developed the client for a B2C marketing content AI service. This service enables individual users to easily create and manage marketing content based on AI-generated content through a blog-style editor and payment system. Content placement is flexible with drag-and-drop functionality, and accessibility is enhanced with social login and responsive design.",
+    "keyAchievements": "Key Achievements",
+    "achievement1": "Developed a blog-style AI content editor - Implemented a WYSIWYG editor that allows users to freely arrange and edit AI-generated text/images with drag and drop functionality",
+    "achievement2": "Applied Toss Payments module to provide a secure and convenient payment experience, improving payment conversion rate by 60%",
+    "achievement3": "Implemented OAuth 2.0-based social login (Google, Naver), reducing registration time by 80% and increasing new registrations by 100%",
+    "achievement4": "Implemented responsive web design, reducing mobile user bounce rate",
+    "achievement5": "Built a Next.js frontend server based on AWS EC2",
+    "technologiesTools": "Technologies and Tools"
   }
 }

@@ -18,13 +18,8 @@ export default function Page() {
   const sampleQuestions = [t('sampleQuestionStack'), t('sampleQuestionFun')];
 
   const handleSampleQuestion = (question: string) => {
+    // input 값을 설정
     setInput(question);
-
-    submitMessage(undefined, {
-      data: {
-        customMessage: question,
-      },
-    });
   };
 
   const handleSubmitOrStop = (e: React.FormEvent<HTMLFormElement>) => {
