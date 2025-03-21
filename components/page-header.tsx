@@ -14,7 +14,8 @@ import { navMap } from '@/lib/navigation';
 
 export function PageHeader() {
   const pathname = usePathname();
-  const currentPage = navMap[pathname];
+  console.log(pathname);
+  const currentPage = navMap[pathname.split('/')[2]];
 
   return (
     <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4 sticky top-0 z-10 bg-background">

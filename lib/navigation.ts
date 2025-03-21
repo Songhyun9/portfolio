@@ -1,11 +1,11 @@
 export const navMap: Record<string, { group: string; title: string }> = {
-  '/info': { group: 'About', title: 'Songhyun Kim' },
-  '/astarmize': { group: 'Work', title: 'Astarmize' },
-  '/copykle': { group: 'Work', title: 'Copykle' },
+  info: { group: 'About', title: 'Songhyun Kim' },
+  astarmize: { group: 'Work', title: 'Astarmize' },
+  copykle: { group: 'Work', title: 'Copykle' },
   // '/golf': { group: 'Work', title: 'Golf Field ERP' },
   // '/webgame': { group: 'Work', title: '3D Webgame' },
   // '/robot': { group: 'Work', title: 'Service Robot' },
-  '/hoeyo': { group: 'Project', title: 'Hoeyo' },
+  hoeyo: { group: 'Project', title: 'Hoeyo' },
   // '/enc': { group: 'Project', title: 'Enc' },
   // '/kica': { group: 'Project', title: 'Kica' },
 };
