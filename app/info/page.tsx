@@ -17,7 +17,7 @@ export default function Page() {
             <Mail />
             ksh93813@gmail.com
           </p>
-          <Link href={'https://github.com/Songhyun9/portfolio'} target="_blank">
+          <Link href={'https://github.com/Songhyun9/portfolio'} target="_blank" aria-label="GitHub 프로필 방문하기">
             <Button className="cursor-pointer">
               <GitBranch /> github
             </Button>
@@ -25,6 +25,7 @@ export default function Page() {
           <Link
             href={'https://www.rallit.com/resumes//3422@ksh93813/%EA%B9%80%EC%86%A1%ED%98%84?theme=STANDARD'}
             target="_blank"
+            aria-label="이력서 보기"
           >
             <Button className="cursor-pointer">
               <FileUser /> 이력서
@@ -47,7 +48,7 @@ export default function Page() {
               <Code size={24} className="text-blue-600 mt-1" />
               <div>
                 <h3 className="font-bold text-lg">기술 스택</h3>
-                <p>React, Next.js, TypeScript, Tailwind CSS, Three.js</p>
+                <p>React, Next.js, TypeScript, Tailwind CSS, Three.js, Zustand, TanStack Query, Vitejs</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
@@ -75,20 +76,21 @@ export default function Page() {
         </CardContent>
       </Card>
 
+      <h2 className="text-2xl font-bold mt-4">프로젝트</h2>
       <div className="grid auto-rows-min gap-4 md:grid-cols-3">
         <Card className="aspect-video relative flex justify-center items-center p-4 group">
           <Image
             src={'/astarmize.webp'}
-            alt="astarmize"
+            alt="Astarmize - B2B 마케팅 콘텐츠 자동화 AI 서비스 이미지"
             width={270}
-            height={150}
+            height={100}
             className="rounded-xl group-hover:opacity-30 transition-opacity"
           />
           <div className="absolute rounded-xl inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <div className="text-white text-center p-4">
               <h3 className="text-xl font-bold">Astarmize</h3>
               <p className="mb-2">기업을 위한 콘텐츠 생성 AI 플랫폼</p>
-              <Link href={'/astarmize'}>
+              <Link href={'/astarmize'} aria-label="Astarmize 프로젝트 상세 보기">
                 <Button variant={'secondary'} className="cursor-pointer hover:bg-white">
                   자세히 보기
                   <ChevronRight />
@@ -101,16 +103,38 @@ export default function Page() {
         <Card className="aspect-video relative flex justify-center items-center p-4 group">
           <Image
             src={'/copykle.webp'}
-            alt="copykle"
+            alt="Copykle - B2C 마케팅 콘텐츠 AI 서비스 이미지"
             width={220}
-            height={200}
+            height={100}
             className="rounded-xl group-hover:opacity-30 transition-opacity"
           />
           <div className="absolute rounded-xl inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <div className="text-white text-center p-4">
               <h3 className="text-xl font-bold">Copykle</h3>
               <p className="mb-2">B2C 콘텐츠 생성 AI 플랫폼</p>
-              <Link href={'/copykle'}>
+              <Link href={'/copykle'} aria-label="Copykle 프로젝트 상세 보기">
+                <Button variant={'secondary'} className="cursor-pointer hover:bg-white">
+                  자세히 보기
+                  <ChevronRight />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </Card>
+
+        <Card className="aspect-video relative flex justify-center items-center p-4 group">
+          <Image
+            src={'/hoeyo.webp'}
+            alt="문화예술공간 호이요 웹사이트 이미지"
+            width={170}
+            height={100}
+            className="rounded-xl group-hover:opacity-30 transition-opacity"
+          />
+          <div className="absolute rounded-xl inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="text-white text-center p-4">
+              <h3 className="text-xl font-bold">호이요</h3>
+              <p className="mb-2">문화예술공간 웹사이트 제작</p>
+              <Link href="/hoeyo" aria-label="호이요 웹사이트 방문하기">
                 <Button variant={'secondary'} className="cursor-pointer hover:bg-white">
                   자세히 보기
                   <ChevronRight />
