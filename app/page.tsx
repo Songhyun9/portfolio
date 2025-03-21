@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useAssistant } from '@ai-sdk/react';
 import { CircleStop, Send } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Page() {
   const { status, messages, input, submitMessage, handleInputChange, setInput, stop, error } = useAssistant({
@@ -38,6 +39,7 @@ export default function Page() {
       {error && <h1>{error.message}</h1>}
       {!messages.length && (
         <div className="flex flex-col w-full h-full justify-center items-center gap-2">
+          <Image src={'/avatar.png'} alt="avatar" width={300} height={300} />
           <h1 className="text-xl font-bold">안녕하세요! 프론트엔드 개발자 김송현입니다.</h1>
           <h1 className="text-xl font-bold">
             제 경력, 프로젝트, 기술 스택에 대해 궁금한 점이 있으시면 무엇이든 물어보세요.
