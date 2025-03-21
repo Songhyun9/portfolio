@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, Code, Globe, Palette, Layout } from 'lucide-react';
+import { Calendar, Palette, Layout } from 'lucide-react';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -73,21 +73,6 @@ export default function Page() {
                 CSS3 미디어 쿼리와 Flexbox/Grid 레이아웃을 활용하여 반응형 웹 디자인을 구현하여 다양한 디바이스에서
                 최적화된 사용자 경험을 제공
               </p>
-            </li>
-            <li className="flex gap-3">
-              <Badge>
-                <Code />
-              </Badge>
-              <p>
-                순수 바닐라 JavaScript를 사용하여 갤러리 슬라이더, 모달 팝업, 스크롤 애니메이션 등 인터랙티브한 요소
-                구현
-              </p>
-            </li>
-            <li className="flex gap-3">
-              <Badge>
-                <Globe />
-              </Badge>
-              <p>SEO 최적화 및 성능 개선으로 검색 엔진 노출도 향상 및 페이지 로딩 속도 개선</p>
             </li>
           </ul>
         </div>

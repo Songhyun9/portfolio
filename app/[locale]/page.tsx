@@ -1,5 +1,6 @@
 'use client';
 import { Button } from '@/components/ui/button';
+import { useTranslations } from 'next-intl';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -11,6 +12,8 @@ export default function Page() {
   const { status, messages, input, submitMessage, handleInputChange, setInput, stop, error } = useAssistant({
     api: '/api/assistant',
   });
+
+  const t = useTranslations('MainPage');
 
   const sampleQuestions = ['어떤 기술 스택을 사용하시나요?', '포트폴리오를 볼 수 있을까요?'];
 
@@ -39,7 +42,7 @@ export default function Page() {
       {!messages.length && (
         <div className="flex flex-col w-full h-full justify-center items-center gap-2">
           <Image src={'/avatar.png'} alt="avatar" width={300} height={300} />
-          <h1 className="text-xl font-bold">안녕하세요! 프론트엔드 개발자 김송현입니다.</h1>
+          <h1 className="text-xl font-bold">안녕하세요! 프론트엔드 개발자 김송현입니다.{t('title')}</h1>
           <h1 className="text-xl font-bold">
             제 경력, 프로젝트, 기술 스택에 대해 궁금한 점이 있으시면 무엇이든 물어보세요.
           </h1>

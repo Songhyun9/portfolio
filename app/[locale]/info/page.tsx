@@ -4,12 +4,12 @@ import { Code, Laptop, Users, Rocket, Mail, GitBranch, FileUser, ChevronRight } 
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Page() {
+export default async function PagePage() {
   return (
     <div className="flex flex-1 flex-col gap-6 p-6 max-w-6xl mx-auto">
       <header className="flex flex-col gap-4 md:flex-row md:items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">김송현</h1>
+          <h1 className="text-3xl font-bold">{''}</h1>
           <p className="text-lg text-accent-foreground">프론트엔드 개발자</p>
         </div>
         <div className="flex gap-2 md:items-end">
